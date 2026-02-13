@@ -1,0 +1,43 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-13T16:25:41.734Z",
+  "summary": "REQ-9 is about deploying the current build to a live environment without changing product features. The diff primarily adds deployment documentation and a smoke-test checklist, but also modifies backend/main.mo with substantial functional code (authorization, profiles, conversations), which goes beyond deployment and does not itself demonstrate a live deployment was performed/configured.",
+  "missing_requirements": [
+    {
+      "id": "REQ-9",
+      "requirement": "Trigger a build and deploy the current YAR-WAHTSAPP application to the live (publicly accessible) environment.",
+      "reason": "The diff shows documentation additions but no concrete deployment configuration or automation changes (e.g., CI/CD workflow, dfx deploy scripts/config changes) and no evidence of a performed deployment or live URL/configuration being set up.",
+      "evidence": [
+        "frontend/DEPLOYMENT.md",
+        "frontend/scripts/live-smoke-checklist.md",
+        "<file-diff> (no CI/CD or dfx config changes shown)"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Backend functional changes including introducing/initializing an access control system and adding/altering authorization checks and messaging/profile logic.",
+      "reason": "The BuildRequest is a deployment-only request with an explicit non-goal of changing product features; modifying backend/main.mo with new/changed behavior is outside the requested scope.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Added a deployment runbook and a live-environment smoke test checklist.",
+      "reason": "REQ-9 asks to deploy; adding documentation is not explicitly requested and does not itself satisfy “deploy to live”.",
+      "evidence": [
+        "frontend/DEPLOYMENT.md",
+        "frontend/scripts/live-smoke-checklist.md"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/DEPLOYMENT.md",
+    "frontend/scripts/live-smoke-checklist.md",
+    "project_state.json"
+  ]
+}

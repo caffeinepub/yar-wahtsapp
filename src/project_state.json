@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Build a WhatsApp-like messaging app named YAR-WAHTSAPP.",
+  "architectural_notes": [
+    "UI should conditionally render the logged-in user's avatar (DP) instead of the static app logo when authenticated."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-whatsapp-like-messaging-app-named-yar-wahtsapp-with-internet-identity-login-and-a-basic-1-to-1-chat-experience-chat-list-chat-screen-sending-and-viewing-messages",
+      "title": "Create a WhatsApp-like messaging app named \"YAR-WAHTSAPP\" with Internet Identity login and a basic 1-to-1 chat experience (chat list, chat screen, sending and viewing messages).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-frontend-build-core-screens-for-a-chat-app-1-auth-gate-sign-in-2-chat-list-recent-conversations-3-new-chat-start-conversation-flow-4-chat-detail-with-message-timeline-and-composer-use-react-query-for-data-fetching-caching-and-periodic-refetch-for-new-messages",
+      "title": "Frontend: Build core screens for a chat app: (1) Auth gate (sign in), (2) Chat list (recent conversations), (3) New chat/start conversation flow, (4) Chat detail with message timeline and composer; use React Query for data fetching/caching and periodic refetch for new messages.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-direction-apply-a-cohesive-modern-messenger-visual-theme-not-blue-purple-across-the-app-using-tailwind-consistent-spacing-typography-chat-bubbles-sidebar-list-layout-and-responsive-mobile-first-layout",
+      "title": "Design direction: Apply a cohesive, modern \"messenger\" visual theme (not blue/purple) across the app using Tailwind (consistent spacing, typography, chat bubbles, sidebar/list layout, and responsive mobile-first layout).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-brand-assets-for-yar-wahtsapp-logo-app-mark-and-render-them-in-the-ui-e-g-header-login-screen-from-frontend-public-assets-generated-do-not-serve-via-backend",
+      "title": "Add generated static brand assets for YAR-WAHTSAPP (logo/app mark) and render them in the UI (e.g., header/login screen) from frontend/public/assets/generated (do not serve via backend).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-profile-setup-ui-to-allow-the-logged-in-user-to-set-a-display-picture-dp-avatar-and-save-it-to-the-backend-user-profile-along-with-the-display-name",
+      "title": "Update the profile setup UI to allow the logged-in user to set a display picture (DP/avatar) and save it to the backend user profile along with the display name.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-when-a-user-is-authenticated-and-has-an-avatar-in-their-user-profile-show-the-user-s-avatar-dp-in-the-app-header-area-s-where-the-app-logo-icon-currently-appears-e-g-in-the-chatlayout-sidebar-header-on-desktop-and-the-mobile-header-if-no-avatar-exists-keep-showing-the-existing-app-icon-logo",
+      "title": "When a user is authenticated and has an avatar in their user profile, show the user’s avatar (DP) in the app header area(s) where the app logo/icon currently appears (e.g., in the ChatLayout sidebar header on desktop and the mobile header). If no avatar exists, keep showing the existing app icon/logo.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-trigger-a-build-and-deploy-the-current-yar-wahtsapp-application-to-the-live-publicly-accessible-environment-using-english-for-any-user-facing-text",
+      "title": "Trigger a build and deploy the current YAR-WAHTSAPP application to the live (publicly accessible) environment, using English for any user-facing text.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a WhatsApp-like messaging app (chat app) named YAR-WAHTSAPP.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Backend: Implement persistent data models and canister methods to support user profiles and 1-to-1 messaging (store users, create/find conversations, send messages, list conversations, list messages with pagination).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "When a user is logged in, show the user's display picture (DP/avatar) in the app (e.g., in place of the logo) when opening/using the app.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Extend the backend UserProfile data model to include an optional user avatar field (display picture) and expose it through the existing profile APIs so the frontend can read and save the avatar for the logged-in user.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "YAR-WAHTSAPP",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

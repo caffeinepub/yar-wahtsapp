@@ -1,0 +1,17 @@
+{
+  "frontend/src/App.tsx": "Main application component that handles authentication state, profile setup flow, and renders either the auth screen or chat layout based on login status.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including user profiles, conversations, messages, with polling for real-time updates.",
+  "frontend/src/features/auth/AuthScreen.tsx": "Landing page with YAR-WAHTSAPP branding, feature highlights, and Internet Identity login button.",
+  "frontend/src/features/profile/ProfileSetupDialog.tsx": "Profile setup dialog that prompts users for their name and optional avatar image with preview, saving both to the backend.",
+  "frontend/src/features/chat/ChatLayout.tsx": "Main chat layout with responsive sidebar and headers, now displaying user avatars in place of app icons when available.",
+  "frontend/src/features/chat/ChatList.tsx": "Sidebar component displaying all conversations sorted by most recent message with avatars and previews.",
+  "frontend/src/features/chat/NewChat.tsx": "Interface for starting a new conversation by entering another user's Principal ID.",
+  "frontend/src/features/chat/ChatDetail.tsx": "Chat view displaying message timeline with differentiated sender bubbles and auto-scroll to latest messages.",
+  "frontend/src/features/chat/MessageComposer.tsx": "Message input component with auto-expanding textarea and send button, supports Enter to send.",
+  "frontend/src/index.css": "Global styles with emerald/teal OKLCH color system for light and dark modes, custom chat bubble utilities.",
+  "frontend/tailwind.config.js": "Tailwind configuration with emerald-themed color palette, Inter font family, and custom design tokens.",
+  "frontend/src/utils/avatarImage.ts": "Utility function to convert image File objects to data URLs with validation for image type and 2MB size limit.",
+  "frontend/src/components/CurrentUserHeaderAvatar.tsx": "Reusable component that displays the logged-in user's avatar when available, falling back to the YAR-WAHTSAPP icon otherwise.",
+  "frontend/DEPLOYMENT.md": "Comprehensive deployment runbook documenting the build process, preflight checks, deployment steps, smoke testing, rollback procedures, and troubleshooting for promoting YAR-WAHTSAPP to the live environment.",
+  "frontend/scripts/live-smoke-checklist.md": "Detailed smoke test checklist for validating the deployed application in the live environment, covering authentication, profile setup, chat functionality, and UI verification across desktop and mobile views."
+}

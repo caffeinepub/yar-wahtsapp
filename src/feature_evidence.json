@@ -1,0 +1,25 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-trigger-a-build-and-deploy-the-current-yar-wahtsapp-application-to-the-live-publicly-accessible-environment-using-english-for-any-user-facing-text",
+      "featureTitle": "Trigger a build and deploy the current YAR-WAHTSAPP application to the live (publicly accessible) environment, using English for any user-facing text.",
+      "files": [
+        "frontend/DEPLOYMENT.md",
+        "frontend/scripts/live-smoke-checklist.md"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

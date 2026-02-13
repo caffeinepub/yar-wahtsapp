@@ -1,0 +1,41 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-13T16:25:41.737Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-9",
+        "summary": "Trigger a build and deploy the current YAR-WAHTSAPP application to the live (publicly accessible) environment, using English for any user-facing text.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/DEPLOYMENT.md",
+          "frontend/scripts/live-smoke-checklist.md"
+        ],
+        "matchedFiles": [
+          "frontend/DEPLOYMENT.md",
+          "frontend/scripts/live-smoke-checklist.md"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/DEPLOYMENT.md",
+    "frontend/scripts/live-smoke-checklist.md",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

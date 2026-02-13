@@ -1,0 +1,28 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Deploy latest YAR-WAHTSAPP build to live environment (frontend-only)",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Provide a safe, repeatable process to build and deploy the current YAR-WAHTSAPP frontend to the live environment without changing product behavior, ensuring all user-facing text remains English.",
+      "acceptanceCriteria": [
+        "A build completes successfully without errors.",
+        "The deployed app is accessible in the live environment and loads the YAR-WAHTSAPP UI.",
+        "No changes are made to product features beyond deploying the current state."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/DEPLOYMENT.md",
+          "operation": "create",
+          "description": "Add a deployment runbook describing how to build the existing frontend and promote the current state to the live (public) environment, including preflight checks (English UI text, asset presence, build command to run), smoke-test steps (load AuthScreen, login flow, ChatLayout render), rollback guidance, and a note explicitly stating no feature/UI changes are included in this deployment."
+        },
+        {
+          "path": "frontend/scripts/live-smoke-checklist.md",
+          "operation": "create",
+          "description": "Create a concise live-environment smoke checklist focused on verifying the deployed UI loads and key screens render (AuthScreen, profile setup dialog when applicable, chat list/detail), while confirming no UX/feature changes; this supports validating the deployment after the build completes."
+        }
+      ]
+    }
+  ]
+}

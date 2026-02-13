@@ -1,0 +1,47 @@
+{
+  "kind": "build_request",
+  "title": "Deploy latest build to live environment",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Trigger a build and deploy the current YAR-WAHTSAPP application to the live (publicly accessible) environment, using English for any user-facing text.",
+      "target": "unknown",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "LIVE"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A build completes successfully without errors.",
+        "The deployed app is accessible in the live environment and loads the YAR-WAHTSAPP UI.",
+        "No changes are made to product features beyond deploying the current state."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui.",
+    "Backend must remain a single Motoko actor in backend/main.mo; only add backend/migration.mo changes if a state upgrade is required."
+  ],
+  "nonGoals": [
+    "Adding new chat features or changing existing UI/UX behavior.",
+    "Backend schema or API changes unrelated to deployment."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}
